@@ -81,7 +81,9 @@ Replying on browser's es module support:
   * https://www.snowpack.dev/#hot-module-replacement
 * Development speed is similar for hello world app
 * Suppose it should change as project become huge:
-  * `CRA` does need **packing** whereas `CSA` doesn't
-* `CSA` can have `packing`, just add `"plugins": [["@snowpack/plugin-webpack", {/* ... */}]]`
+  * `CRA` does need **bundling** whereas `CSA` doesn't
+* `CSA` can have `bundling`, just add `"plugins": [["@snowpack/plugin-webpack", {/* ... */}]]`
   * https://www.snowpack.dev/#webpack
 * Cypress? just `yarn add cypress --dev` for both
+* As long as project code & testing browser support es module, should be good to use snowpack
+  * 91.92% brower support es module https://caniuse.com/es6-module
