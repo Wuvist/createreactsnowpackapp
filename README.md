@@ -1,4 +1,4 @@
-# Create Project
+# App Setup
 
 ## React app
 
@@ -13,18 +13,25 @@
 
 ### Misc
 
-No `git` repo created; but has gitignore.
-
+* No `git` repo created; but has gitignore.
+* 1553 packages including dependency added
+  * `npm ls --parseable | wc -l`
+* Complete docs: https://create-react-app.dev/
 
 ## Snowpack app
 
 `npx create-snowpack-app snowpack-app --template @snowpack/app-template-react-typescript`
 
 * npx: installed 30 in 1.584s
-* added 1007 packages from 471 contributors and audited 1008 packages in 17.031s
+* added *1007* packages from 471 contributors and audited 1008 packages in 17.031s
 
 * Total: 1.584 + 17.031 = 18.615
 
 ### Misc
 
-`git` repo created with gitignore.
+* `git` repo created with gitignore.
+* 1008 packages including dependency added
+* Single line doc for `CSA`: `npx create-snowpack-app new-dir --template @snowpack/app-template-NAME [--use-yarn | --use-pnpm | --no-install]`
+  * Complete docs for snowpack: https://www.snowpack.dev/
+
+# Run App
