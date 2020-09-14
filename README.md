@@ -75,9 +75,12 @@ Replying on browser's es module support:
     * `App.tsx` & `App.test.tsx` are almost identical
   * Just that wrapped in different convention
     * `CRA` expose whole `tsconfig.json`
-    * `CRA` extends `tsconfig.json` from `@snowpack/app-scripts-react/tsconfig.base.json`
+    * `CSA` extends `tsconfig.json` from `@snowpack/app-scripts-react/tsconfig.base.json`
+  * Underlining development tools are very different, for example:
+    * `CRA` used [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+    * `CSA` used snowpack's [built-in server](https://www.snowpack.dev/#snowpack%E2%80%99s-dev-server)
 * Both support `HMR` - hot module reload, development experience should be quite smooth
-  * CRA depends on `webpack-dev-server` https://webpack.js.org/concepts/hot-module-replacement/
+  * `CRA` depends on `webpack-dev-server`: https://webpack.js.org/concepts/hot-module-replacement/
   * https://www.snowpack.dev/#hot-module-replacement
 * Development speed is similar for hello world app
 * Suppose it should change as project become huge:
